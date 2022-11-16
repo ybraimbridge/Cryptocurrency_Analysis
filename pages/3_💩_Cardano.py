@@ -1,0 +1,56 @@
+import streamlit as st
+
+st.title("ADA Page")
+with st.container():
+
+    st.image(
+        "data:image/png;base64,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",
+        width=83,
+    )
+
+    ada_option = st.selectbox(
+        "Choose which graph to view..",
+        (
+            "ADA_100k",
+            "Price",
+            "transaction fees",
+            "AAC",
+            "marketcap_dominance",
+            "volatility",
+        ),
+    )
+    st.header(ada_option)
+
+    # col1, col2 = st.columns(2, gap="small")
+
+    # with col1:
+
+    if ada_option == "ADA_100k":
+        st.image("hvplot_images/cardano_graphs/cardano_100K.png", use_column_width=True)
+
+    if ada_option == "Price":
+        st.image(
+            "hvplot_images/cardano_graphs/cardano_price.png", use_column_width=True
+        )
+
+    if ada_option == "transaction fees":
+        st.image(
+            "hvplot_images/cardano_graphs/cardano_transaction_fees.png",
+            use_column_width=True,
+        )
+
+    if ada_option == "AAC":
+        st.image("hvplot_images/cardano_graphs/cardano_aac.png", use_column_width=True)
+
+    if ada_option == "marketcap_dominance":
+        st.image(
+            "/Users/ericondarza/Downloads/Cryptocurrency_Analysis-master 2/hvplot_images/cardano_graphs/cardano_marketcap_dominance.png",
+            use_column_width=True,
+        )
+
+    if ada_option == "volatility":
+        st.image(
+            "hvplot_images/cardano_graphs/cardano_volatility.png",
+            use_column_width=True,
+        )
+
